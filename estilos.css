@@ -1,0 +1,118 @@
+body {
+    background-color: whitesmoke;
+}
+
+/* titulo */
+h1 {
+    color: chocolate;
+    text-align: center;
+    position: relative;
+    top: -120px;
+}
+
+/* subtitulo  h2 */
+h2 {
+    color: chocolate;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+/* parrafos */
+p {
+    padding-top: 30px;
+    font-family: cursive;
+    text-align: center;
+    width: 960px;
+    position: relative;
+    left: 200px;
+}
+
+/* cabecera enlaces */
+.enlace {
+    text-align: left;
+    padding: 30px;
+    position: relative;
+    top: -110px;
+}
+
+.enlaces {
+    text-decoration: none;
+}
+
+/* cabecera logo */
+.icono {
+    text-align: right;
+    padding: 30px;
+}
+
+.icono .icon {
+    position: relative;
+    right: 12px;
+}
+
+/* seccion bienvenida */
+.cuerpo {
+    text-align: center;
+    position: relative;
+    top: -80px;
+}
+
+/* boton */
+.boton {
+    border-radius: 8px;
+    background-color: thistle;
+    padding: 5px;
+    position: relative;
+    top: 10px;
+}
+/* seccion elegir opciones */
+.lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.lista .li{
+    text-decoration:none;
+    padding: 20px;
+}
+/* tabla */
+.table {
+    background-color: azure;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    margin: auto;
+    border-color: black;
+    border-radius: 8px;
+    width: 950px;
+    height: 600px;
+}
+
+/* acerca de nostoros */
+.acerca {
+    position: relative;
+    top: 100px
+}
+.acerca .equipo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* pie de pagina */
+h5{
+    padding: 30px;
+    position: relative;
+    top: 50px;
+}
+hr{
+    position: relative;
+    top: 5px;
+}
+.foot{
+    text-align: right;
+    padding-right: 30px;
+    position: relative;
+    top: 5px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion</title>
+    <link rel="website icon" href="img/icon.png">
+    <link rel="stylesheet" href="inicio-sesion.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <figure class="icono">
+            <img class="icon" src="img/icon.png" alt="icono">
+            <figcaption>CITYMED</figcaption>
+        </figure>
+        <div class="enlace">
+            <a class="enlaces" href="index.html">Volver</a>
+        </div>
+        <!-- encabezado -->
+        <h1>INICIO DE SESION MEDICOS</h1>
+        <h3>Completa la siguiente informacion con tu nombre y numero de documento para iniciar Sesion</h3>
+    </header>
+    <nav>
+        <!-- formulario -->
+        <div class="registrar">
+            <form action="Listado-medico.html" id="login-medico" class="form" target="_blank">
+                <h2 class="titulo">Inicia Sesion</h2>
+                <!-- ingreso nombres -->
+                <div class="contenedorinput">
+                    <input type="text" id="nombre" class="input" placeholder="a" required>
+                    <label for="" class="label">Nombre</label>
+                </div>
+                <!-- ingreso cedula -->
+                <div class="contenedorinput">
+                    <input type="number" id="cedula" class="input" placeholder="a" required>
+                    <label for="" class="label">Cedula</label>
+                </div>
+                <!-- boton de registro -->
+                <input type="submit" class="submitBoton" value="Ingresar">
+            </form>
+        </div>
+    </nav>
+    <footer>
+        <div class="page-foot">
+            <h5>Colombia</h5>
+            <hr>
+            <div class="foot">
+                <a class="enlaces" href="https://www.facebook.com/?locale=es_LA">FACEBOOK</a> <b>/</b>
+                <a class="enlaces" href="https://www.instagram.com/">INSTAGRAM</a> <b>/</b>
+                <a class="enlaces" href="https://twitter.com/?lang=es">TWITTER</a> <b>/</b>
+                <a class="enlaces" href="https://co.linkedin.com/">LINKEDIN</a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+body{
+    background-color: whitesmoke;
+}
+h1{
+    color: chocolate;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: -140px;
+}
+h3{
+    text-align: center;
+    font-family: cursive;
+    position: relative;
+    top: -140px;
+}
+/* estilo logo */
+.icono {
+    text-align: right;
+    position: relative;
+    top: 25px;
+    right: 15px;
+}
+.icono .icon {
+    position: relative;
+    right: 11px;
+}
+/* enlace */
+.enlace {
+    text-align: left;
+    padding: 50px;
+    position: relative;
+    top: -90px;
+}
+
+.enlaces {
+    text-decoration: none;
+}
+/* estilo del select */
+.select{
+    position:relative;
+    left: 25px;
+    width: 100px;
+}
+.select label{
+    position: relative;
+    left: 7px;
+    color: chocolate;
+}
+.select .op{
+    width: 290px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #DADCE0;
+}
+.select .op:focus{
+    border: 2px solid chocolate;
+}
+/* estilo del formulario */
+.registrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.form{
+    background-color: white;
+    width: 350px;
+    border-radius: 8px;
+    padding: 20px 10px 20px;
+    box-shadow: 0 10px 20px rgba(92, 99, 105, .2);
+    position: relative;
+    top: 190px;
+}
+.titulo{
+    color: chocolate;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.contenedorinput{
+    position: relative;
+    height: 55px;
+    width: 90%;
+    left: 25px;
+    margin-bottom: 17px;
+}
+.input{
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: none;
+    
+}
+::placeholder{
+    color: transparent;
+}
+.label{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: chocolate;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+.submitBoton{
+    display: block;
+    margin-left: auto;
+    padding: 10px 15px;
+    border: none;
+    background-color: chocolate;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    position: relative;
+    right: 20px;
+}
+.submitBoton:hover{
+    background-color:brown;
+    transform: translateY(-5px);
+}
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: chocolate;
+}
+.input:focus{
+    border: 2px solid chocolate;
+}
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* pie de pagina */
+h5{
+    padding: 30px;
+    position: relative;
+    top: 480px;
+}
+hr{
+    position: relative;
+    top: 440px;
+}
+.foot{
+    text-align: right;
+    padding-right: 30px;
+    position: relative;
+    top: 440px;
+}

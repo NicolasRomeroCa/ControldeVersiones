@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Pacientes</title>
+    <link rel="website icon" href="img/icon.png">
+    <link rel="stylesheet" href="inicio-sesion.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <figure class="icono">
+            <img class="icon" src="img/icon.png" alt="icono">
+            <figcaption>CITYMED</figcaption>
+        </figure>
+        <div class="enlace">
+            <a class="enlaces" href="index.html">Volver</a>
+        </div>
+        <!-- encabezado -->
+        <h1>LISTADO DE PACIENTES</h1>
+        <h3>A continuacion encontraras una tabla con el listado de todos los pacientes registrados en nuestra plataforma
+        </h3>
+    </header>
+    <!-- tabla -->
+    <nav>
+        <section>
+            <table class="table" border="solid">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Numero Cedula</th>
+                        <th>Edad</th>
+                        <th>Telefono</th>
+                        <th>Especialidad</th>
+                        <th>Medico</th>
+                    </tr>
+                </thead>
+                <tbody id="listado-paciente">
+                    <tr>
+                        <td>Andres</td>
+                        <td>Correa</td>
+                        <td>52990946</td>
+                        <td>50</td>
+                        <td>3184159060</td>
+                        <td>medicina general</td>
+                        <td>Carlos Quintero</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </nav>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Medico</title>
+    <link rel="website icon" href="img/icon.png">
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <figure class="icono">
+            <img class="icon" src="img/icon.png" alt="icono">
+            <figcaption>CITYMED</figcaption>
+        </figure>
+        <div class="enlace">
+            <a class="enlaces" href="index.html">Volver</a>
+        </div>
+        <!-- encabezado -->
+        <h1>RESGISTRO NUEVO MEDICO</h1>
+        <h3>Completa la siguiente informacion para la creacion de un nuevo medico</h3>
+    </header>
+    <nav>
+        <!-- formulario -->
+        <div class="registrar">
+            <form id="formularioMedicos" action="" class="form">
+                <h2 class="titulo">Registrate</h2>
+                <!-- ingreso nombres -->
+                <div class="contenedorinput">
+                    <input type="text" id="nombre" class="input" placeholder="a" required>
+                    <label for="" class="label">Nombres</label>
+                </div>
+                <!-- ingreso apellidos -->
+                <div class="contenedorinput">
+                    <input type="text" id="apellido" class="input" placeholder="a" required>
+                    <label for="" class="label">Apellidos</label>
+                </div>
+                <!-- ingreso documento -->
+                <div class="contenedorinput">
+                    <input type="number" id="cedula" class="input" placeholder="a" required> 
+                    <label for="" class="label">Cedula</label>
+                </div>
+                <!-- ingreso consultorio -->
+                <div class="contenedorinput">
+                    <input type="number" id="consultorio" class="input" placeholder="a" required>
+                    <label for="" class="label">Consultorio</label>
+                </div>
+                <!-- ingreso telefono-->
+                <div class="contenedorinput">
+                    <input type="number" id="telefono" class="input" placeholder="a" required>
+                    <label for="" class="label">Telefono</label>
+                </div>
+                <!-- ingreso correo -->
+                <div class="contenedorinput">
+                    <input type="email" id="correo" class="input" placeholder="a" required>
+                    <label for="" class="label">Correo</label>
+                </div>
+                <!-- ingreso especialidad -->
+                <div class="select">
+                    <label for="">Especialidad</label>
+                    <select name="" id="especialidad" class="op" required>
+                        <option value="Especialidad">--------SELECCIONE ESPECIALIDAD--------</option>
+                        <option value="Medicina General">Medicina General</option>
+                        <option value="Cardiologia">Cardiologia</option>
+                        <option value="Medicina Interna">Medicina Interna</option>
+                        <option value="Dermatologia">Dermatologia</option>
+                        <option value="Rehabilitacion Fisica">Rehabilitacion Fisica</option>
+                        <option value="Psicologia">Psicologia</option>
+                        <option value="Odontologia">Odontologia</option>
+                        <option value="Radiologia">Radiologia</option>
+                    </select>
+                </div>
+                <!-- boton de registro -->
+                <input type="submit" class="submitBoton" value="registrar">
+            </form>
+        </div>
+    </nav>
+    <footer>
+        <div class="page-foot">
+            <h5>Colombia</h5>
+            <hr>
+            <div class="foot">
+                <a class="enlaces" href="https://www.facebook.com/?locale=es_LA">FACEBOOK</a> <b>/</b>
+                <a class="enlaces" href="https://www.instagram.com/">INSTAGRAM</a> <b>/</b>
+                <a class="enlaces" href="https://twitter.com/?lang=es">TWITTER</a> <b>/</b>
+                <a class="enlaces" href="https://co.linkedin.com/">LINKEDIN</a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

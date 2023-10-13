@@ -55,6 +55,7 @@ const mostrarPacientes = function () {
         cuerpoTabla.appendChild(fila);
     });
 };
+// mostrar listado pacientes
 if (window.location.href.endsWith("Listado-paciente.html")) {
     mostrarPacientes();
 }
@@ -70,7 +71,6 @@ const mostrarMedicos = function () {
     }
     Medicos.forEach((medico) => {
         let fila = document.createElement("tr");
-        //Para crear celda DOM tiene un metodo que es insertCell()
         let celdaNombres = fila.insertCell();
         let celdaApellidos = fila.insertCell();
         let celdaCedula = fila.insertCell();
@@ -98,9 +98,7 @@ if (window.location.href.endsWith("Listado-medico.html")) {
 
 // funcion clase hija paciente
 if (window.location.href.endsWith("registro-paciente.html")) {
-    //El evento para formularioMedicos va a ser de tipo enviar o guardar es decir submit
     formularioPaciente.addEventListener("submit", function (event) {
-        //Previene que la pagina se recargue sin antes hacer la logica del addEventListener
         event.preventDefault();
         let valorNombres = nombres.value;
         let valorApellidos = apellidos.value;
@@ -118,14 +116,12 @@ if (window.location.href.endsWith("registro-paciente.html")) {
         paciente.edad = valorEdad
         let Pacientes = [];
         let localPacientes = localStorage.getItem("pacientes");
-        //Si localPacientes no esta vacio lo convierte en objeto para hacer el push
         if (localPacientes) {
             Pacientes = JSON.parse(localPacientes);
         }
         Pacientes.push(paciente);
-        //Guardar la información de pacientes en el localStorage
         localStorage.setItem("pacientes", JSON.stringify(Pacientes));
-        alert("Paciente registrado!");
+        alert("Paciente registrado con exito");
         location.href="index.html"
     });
 }
@@ -141,7 +137,6 @@ if (window.location.href.endsWith("registro-medico.html")) {
         let valorEspecialidad = especialidad.value;
         let valorConsultorio = consultorio.value;
         let valorCorreo = correo.value;
-        // clase hija medico
         const medico = new Usuario(
             valorNombres,
             valorApellidos,
@@ -158,7 +153,7 @@ if (window.location.href.endsWith("registro-medico.html")) {
         }
         Medicos.push(medico);
         localStorage.setItem("Medicos", JSON.stringify(Medicos));
-        alert("Medico registrado!");
+        alert("Medico registrado con exito");
         location.href="index.html"
     });
 }
@@ -170,7 +165,6 @@ if (window.location.href.endsWith("inicio-sesionP.html")) {
         event.preventDefault();
         let valorNombres = nombres.value;
         let valorCedula = cedula.value;
-        // clase hija medico
         const loginP = new Usuario(
             valorNombres,
             valorCedula,
@@ -182,13 +176,12 @@ if (window.location.href.endsWith("inicio-sesionP.html")) {
         }
         loginPaciente.push(loginP);
         localStorage.setItem("loginPaciente", JSON.stringify(loginPaciente));
-        alert("Iniciaste sesion correctamente!");
+        alert(`Bienvenido ${valorNombres} \nIniciaste sesion correctamente`);
         location.href="Listado-paciente.html"
     });
 }
 
 // funcion inicio de sesion medico
-
 if (window.location.href.endsWith("inicio-sesionM.html")) {
     loginMedico.addEventListener("submit",function(event){
         event.preventDefault();
@@ -205,7 +198,7 @@ if (window.location.href.endsWith("inicio-sesionM.html")) {
         }
         loginMedico.push(loginM);
         localStorage.setItem("loginMedico", JSON.stringify(loginMedico));
-        alert("iniciaste sesion correctamente!")
+        alert(`Bienvenido ${valorNombres} \nIniciaste sesion correctamente`)
         location.href = "Listado-medico.html"
     }) 
 }

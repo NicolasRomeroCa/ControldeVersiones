@@ -17,7 +17,7 @@ let formularioInicioSesion = document.getElementById("formularioInicioSesion")
 // formulario inicio de sesion medico
 let loginMedico = document.getElementById("login-medico")
 
-// clase madre usuario
+// clase madres usuario
 class Usuario {
     constructor(nombres, apellidos, cedula, telefono, especialidad) {
         this.nombres = nombres;

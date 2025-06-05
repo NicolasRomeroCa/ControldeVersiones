@@ -1,118 +1,160 @@
+/* Fondo general */
 body {
-    background-color: whitesmoke;
-}
-
-/* titulo */
-h1 {
-    color: chocolate;
+    background-color: #f5f5f5; /* Color uniforme para toda la página */
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    position: relative;
-    top: -120px;
+    color: #333;
 }
 
-/* subtitulo h2 */
-h2 {
-    color: chocolate;
-    text-align: center;
-    position: relative;
-    top: 20px;
+/* Eliminar fondo blanco en header */
+header {
+    padding: 20px;
+    background-color: transparent; /* Elimina color blanco */
 }
 
-/* parrafos */
-p {
-    padding-top: 30px;
-    font-family: cursive;
-    text-align: center;
-    width: 960px;
-    position: relative;
-    left: 200px;
+/* Icono y título */
+.icono {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
-/* cabecera enlaces */
+.icono img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Enlaces del header */
 .enlace {
-    text-align: left;
-    padding: 30px;
-    position: relative;
-    top: -110px;
+    margin: 15px 0;
 }
 
 .enlaces {
     text-decoration: none;
+    margin: 0 10px;
+    color: #b24700;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-/* cabecera logo */
-.icono {
-    text-align: right;
-    padding: 30px;
+.enlaces:hover {
+    color: #ff6600;
+    text-decoration: underline;
 }
 
-.icono .icon {
-    position: relative;
-    right: 12px;
+/* Títulos */
+h1 {
+    color: #c05a00;
+    margin-top: 20px;
 }
 
-/* seccion bienvenida */
-.cuerpo {
-    text-align: center;
-    position: relative;
-    top: -80px;
+h2 {
+    color: #b24700;
+    margin-top: 30px;
 }
 
-/* boton */
+h5 {
+    color: #5a5a5a;
+    margin-top: 20px;
+}
+
+/* Parrafos */
+p {
+    padding: 15px;
+    font-family: cursive;
+    color: #444;
+}
+
+/* Botón */
 .boton {
     border-radius: 8px;
-    background-color: thistle;
-    padding: 5px;
-    position: relative;
-    top: 10px;
+    background-color: #f4d6f4;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: #5a005a;
+    transition: background-color 0.3s ease;
 }
-/* seccion elegir opciones */
-.lista{
+
+.boton:hover {
+    background-color: #e0b0e0;
+}
+
+/* Lista de opciones */
+.lista {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 300px;
+    margin: 40px 0;
 }
-.lista .li{
-    text-decoration:none;
-    padding: 20px;
+
+.lista .li {
+    text-decoration: none;
+    padding: 10px;
+    color: #b24700;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
-/* tabla */
+
+.lista .li:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Tabla */
 .table {
     background-color: azure;
-    position: relative;
-    top: 40px;
-    text-align: center;
-    margin: auto;
-    border-color: black;
+    border: 1px solid black;
     border-radius: 8px;
-    width: 950px;
-    height: 600px;
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
 }
 
-/* acerca de nostoros */
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid black;
+    color: #333;
+}
+
+/* Acerca de nosotros */
 .acerca {
-    position: relative;
-    top: 100px
-}
-.acerca .equipo {
-    text-align: center;
-    padding-top: 20px;
+    margin-top: 60px;
 }
 
-/* pie de pagina */
-h5{
-    padding: 30px;
-    position: relative;
-    top: 50px;
+.equipo img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
 }
-hr{
-    position: relative;
-    top: 5px;
+
+/* Footer */
+footer {
+    background-color: transparent;
+    padding: 30px 10px;
+    margin-top: 60px;
+    border-top: 2px solid #ddd;
 }
-.foot{
-    text-align: right;
-    padding-right: 30px;
-    position: relative;
-    top: 5px;
+
+footer .foot {
+    margin-top: 10px;
+}
+
+footer .enlaces {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #b24700;
+}
+
+footer .enlaces:hover {
+    color: #ff6600;
+    text-decoration: underline;
 }

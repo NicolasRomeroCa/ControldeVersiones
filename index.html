@@ -1,124 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>CITYMED</title>
    <link rel="stylesheet" href="estilos.css">
-   <link rel="website icon" href="img/icon.png">
-
+   <link rel="icon" href="img/icon.png">
 </head>
 
 <body>
    <header>
       <figure class="icono">
-         <img class="icon" src="img/icon.png" alt="icono">
+         <img class="icon" src="img/icon.png" alt="Icono de CityMed">
          <figcaption>CITYMED</figcaption>
       </figure>
-      <div class="enlace">
-         <a class="enlaces" href="registro-medico.html">Registro Del Medico</a> <b> / </b>
-         <a class="enlaces" href="registro-paciente.html">Registro Del Paciente</a> <b> / </b>
-         <a class="enlaces" href="inicio-sesionM.html">Listado Del Medico</a> <b> / </b>
-         <a class="enlaces" href="inicio-sesionP.html">Listado Del Paciente</a>
-      </div>
-      <h1>BIENVENIDO AL PORTAL CITY MED</h1>
+
+      <nav class="enlace">
+         <a class="enlaces" href="registro-medico.html">Registro Médico</a>
+         <span>/</span>
+         <a class="enlaces" href="registro-paciente.html">Registro Paciente</a>
+         <span>/</span>
+         <a class="enlaces" href="inicio-sesionM.html">Listado Médicos</a>
+         <span>/</span>
+         <a class="enlaces" href="inicio-sesionP.html">Listado Pacientes</a>
+      </nav>
+
+      <h1>Bienvenido al Portal CityMed</h1>
    </header>
-   <nav>
-      <!-- seccion de inicio o bienvenida -->
-      <section>
-         <div class="cuerpo">
-            <figure>
-               <img src="img/welcome.png" alt="bienvenida" width="280px" height="190px">
-               <figcaption>BIENVENIDO AL SISTEMA PARA LA CREACION DE PACIENTES Y MEDICOS</figcaption>
-            </figure>
-            <form action="#opciones">
-               <input class="boton" type="submit" value="Opciones">
-            </form>
-            <article>
-               <p>ESTE ES UN SISTEMA PARA EL REGISTRO DE USUARIO Y PACIENTES DE LA EPS CITYMED Y TAMBIEN CONTARAS CON LISTADO DE PACIENTES Y LISTADO DE MEDICOS DE LA EPS.</p>
-            </article>
-         </div>
-      <!-- seccion Eligir opciones -->
+
+   <main>
+      <section class="cuerpo">
+         <figure>
+            <img src="img/welcome.png" alt="Imagen de bienvenida" width="280" height="190">
+            <figcaption>Sistema para creación de pacientes y médicos</figcaption>
+         </figure>
+
+         <form action="#opciones">
+            <input class="boton" type="submit" value="Opciones">
+         </form>
+
+         <article>
+            <p>Este es un sistema para el registro de usuarios de la EPS CityMed. Incluye listados de pacientes y médicos registrados.</p>
+         </article>
       </section>
-      <p id="opciones">Elige una de las siguientes opciones para ingresar</p>
-      <div class="lista">
-         <ul>
-            <li class="li"><a class="li" href="registro-medico.html">Registro de medicos</a></li>
-            <li class="li"><a class="li" href="registro-paciente.html">Registro de pacientes</a></li>
-            <li class="li"><a class="li" href="inicio-sesionM.html">Listado de medicos registrados</a></li>
-            <li class="li"><a class="li" href="inicio-sesionP.html">Listado de pacientes registrados</a></li>
+
+      <section id="opciones">
+         <h2>Opciones de ingreso</h2>
+         <ul class="lista">
+            <li><a class="li" href="registro-medico.html">Registro de médicos</a></li>
+            <li><a class="li" href="registro-paciente.html">Registro de pacientes</a></li>
+            <li><a class="li" href="inicio-sesionM.html">Listado de médicos registrados</a></li>
+            <li><a class="li" href="inicio-sesionP.html">Listado de pacientes registrados</a></li>
          </ul>
-      </div>
-      <!-- seccion table de consulta -->
+      </section>
+
       <section>
-         <table class="table" border="solid">
-            <h2>ESPECIALISTAS</h2>
+         <h2>Especialistas</h2>
+         <table class="table">
             <thead>
                <tr>
-                  <th>Area</th>
-                  <th>Descripcion</th>
+                  <th>Área</th>
+                  <th>Descripción</th>
                </tr>
             </thead>
             <tbody>
-               <tr>
-                  <th>Medicina general</th>
-                  <td>La medicina de familia o medicina familiar es la disciplina médica que se encarga de mantener la salud en todos los aspectos, analizando y estudiando el cuerpo humano en forma global.</td>
-               </tr>
-               <tr>
-                  <th>Cardiologia</th>
-                  <td>La cardiología es la rama de la medicina que se encarga del estudio, prevención, diagnóstico y tratamiento de las enfermedades del corazón y del sistema circulatorio.</td>
-               </tr>
-               <tr>
-                  <th>Medicina Interna</th>
-                  <td>La medicina interna es una especialidad médica que atiende integralmente los problemas de salud en pacientes adultos, ingresados en un centro hospitalario o en consultas ambulatorias</td>
-               </tr>
-               <tr>
-                  <th>Dermatologia</th>
-                  <td>La dermatología es la rama de la medicina que se especializa en el diagnóstico, tratamiento y manejo de las enfermedades y desórdenes de la piel</td>
-               </tr>
-               <tr>
-                  <th>Rehabilitacion Fisica</th>
-                  <td>La medicina física y rehabilitación, también llamada fisiatría, es una especialidad médica que se ocupa del diagnóstico de los pacientes con una enfermedad, un trastorno físico o una lesión que deteriora las funciones fisiológicas normales.</td>
-               </tr>
-               <tr>
-                  <th>Psicologia</th>
-                  <td>La psicología es, a la vez, una ciencia, disciplina académica y profesión que trata el estudio y el análisis de la conducta y los procesos mentales de los individuos</td>
-               </tr>
-               <tr>
-                  <th>Odontologia</th>
-                  <td>La odontología es una de las ciencias de la salud que se encarga del diagnóstico, tratamiento y prevención de las enfermedades del aparato estomatognático, el cual incluye además de los dientes, las encías, el tejido periodontal, el maxilar superior, el maxilar inferior y la articulación temporomandibular</td>
-               </tr>
-               <tr>
-                  <th>Radiologia</th>
-                  <td>La radiología es la especialidad médica, que se ocupa de generar imágenes del interior del cuerpo mediante diferentes agentes físicos y de utilizar estas imágenes para el diagnóstico y, en menor medida, para el pronóstico y el tratamiento de las enfermedades</td>
-               </tr>
+               <tr><th>Medicina general</th><td>Analiza la salud de manera global y mantiene el bienestar general del paciente.</td></tr>
+               <tr><th>Cardiología</th><td>Diagnóstico y tratamiento de enfermedades del corazón y sistema circulatorio.</td></tr>
+               <tr><th>Medicina Interna</th><td>Atención integral de problemas de salud en adultos.</td></tr>
+               <tr><th>Dermatología</th><td>Diagnóstico y tratamiento de enfermedades de la piel.</td></tr>
+               <tr><th>Rehabilitación Física</th><td>Recuperación de funciones físicas tras enfermedades o lesiones.</td></tr>
+               <tr><th>Psicología</th><td>Estudio de la conducta y procesos mentales de los individuos.</td></tr>
+               <tr><th>Odontología</th><td>Prevención y tratamiento de enfermedades bucales.</td></tr>
+               <tr><th>Radiología</th><td>Uso de imágenes para diagnóstico y tratamiento de enfermedades.</td></tr>
             </tbody>
          </table>
       </section>
-      <!-- seccion de acerca de nosotros -->
-      <section>
-         <div class="acerca">
-            <h2 id="acerca-de">ACERCA DE NOSOTROS</h2>
-            <article>
-               <p>SOMOS UN EQUIPO DE TRABAJO EL CUAL SE ENCARGARA DE BRINDARTE TODO UN SISTEMA PARA EL INGRESO,
-                  SOLICITUD Y SERVICIO DE REGISTRO PARA LA PLATAFORMA DE CITAS MEDICAS.</p>
-               <div class="equipo">
-                  <img src="img/equipo.jpg" alt="equipo" width="400px" height="400px">
-               </div>
-            </article>
-         </div>
-      </section>
-   </nav>
-   <footer>
 
+      <section class="acerca">
+         <h2>Acerca de nosotros</h2>
+         <article>
+            <p>Somos un equipo comprometido con brindarte un sistema eficiente para el ingreso, solicitud y servicios médicos dentro de la EPS CityMed.</p>
+            <div class="equipo">
+               <img src="img/equipo.jpg" alt="Nuestro equipo" width="400" height="400">
+            </div>
+         </article>
+      </section>
+   </main>
+
+   <footer>
       <h5>Colombia</h5>
       <hr>
       <div class="foot">
-         <a class="enlaces" href="https://www.facebook.com/?locale=es_LA">FACEBOOK</a> <b>/</b>
-         <a class="enlaces" href="https://www.instagram.com/">INSTAGRAM</a> <b>/</b>
-         <a class="enlaces" href="https://twitter.com/?lang=es">TWITTER</a> <b>/</b>
-         <a class="enlaces" href="https://co.linkedin.com/">LINKEDIN</a>
+         <a class="enlaces" href="https://www.facebook.com/?locale=es_LA">Facebook</a>
+         <span>/</span>
+         <a class="enlaces" href="https://www.instagram.com/">Instagram</a>
+         <span>/</span>
+         <a class="enlaces" href="https://twitter.com/?lang=es">Twitter</a>
+         <span>/</span>
+         <a class="enlaces" href="https://co.linkedin.com/">LinkedIn</a>
       </div>
    </footer>
 </body>

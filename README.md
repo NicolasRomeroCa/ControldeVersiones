@@ -1,2 +1,2 @@
 # CentroMedico
-mi proyecto centro medico
+mi proyecto centro medico (reingenieria)
